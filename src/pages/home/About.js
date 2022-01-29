@@ -14,16 +14,16 @@ export default function About() {
     <Box pt="30px" pb="50px" id="about">
       <Box>
         <Container maxW="container.lg">
-          <Text fontFamily="nunito" fontWeight="800" fontSize="24px">
+          <Text fontFamily="nunito" fontWeight="800" fontSize="26px" mt="20px">
             About Me
           </Text>
-          <Text fontFamily="roboto" fontWeight="400" fontSize="18px" mt="20px">
+          <Text fontFamily="roboto" fontWeight="400" fontSize="16px" mt="20px">
             Hello! 👋 I’m Kevin Riveros, a Software developer based in Lima,
             Perú 🇵🇪 who enjoys building things that live on the internet. I
             develop exceptional websites and web apps that provide intuitive,
             pixel-perfect user interfaces with efficient and modern frameworks.
           </Text>
-          <Text fontFamily="roboto" fontWeight="400" fontSize="18px" mt="20px">
+          <Text fontFamily="roboto" fontWeight="400" fontSize="16px" mt="20px">
             Here are a few technologies I’ve been working with recently:
           </Text>
           <List spacing={3} mt="20px">

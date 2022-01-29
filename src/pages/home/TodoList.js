@@ -18,12 +18,38 @@ const ToDoList = [
     text: "Build personal brand kevincodigo.com",
   },
   {
+    text: "Research about web3 and blockchain",
+  },
+  {
     text: "Improve python skills 🐍",
   },
   {
     text: "Learn to dance salsa 🕺",
   },
 ];
+
+const ItemTask = ({ item, onDeleteItem }) => {
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  return (
+    <Box py="4px" d="flex" justifyContent="space-between">
+      <Box d="flex" alignItems="center">
+        <Icon as={ChevronRightIcon} mr="10px" />
+        <Text
+          textDecor={isCompleted ? "line-through" : "none"}
+          onClick={() => setIsCompleted(!isCompleted)}
+          cursor="pointer"
+          color={isCompleted ? "gray.400" : "black"}
+        >
+          {item.text}
+        </Text>
+      </Box>
+      <Button size="sm" bg="white" onClick={() => onDeleteItem(item.text)}>
+        <Icon as={DeleteIcon} color="gray" />
+      </Button>
+    </Box>
+  );
+};
 
 export default function ToDo() {
   const [newItem, setnewItem] = useState("");
@@ -62,7 +88,7 @@ export default function ToDo() {
     <Box pt="30px" pb="50px">
       <Box>
         <Container maxW="container.lg">
-          <Text fontFamily="nunito" fontWeight="800" fontSize="24px">
+          <Text fontFamily="nunito" fontWeight="800" fontSize="26px">
             Todo list 📝
           </Text>
 
@@ -100,21 +126,7 @@ export default function ToDo() {
             {todoItems &&
               todoItems.length > 0 &&
               todoItems.map((item) => {
-                return (
-                  <Box py="4px" d="flex" justifyContent="space-between">
-                    <Box d="flex" alignItems="center">
-                      <Icon as={ChevronRightIcon} mr="10px" />
-                      <Text>{item.text}</Text>
-                    </Box>
-                    <Button
-                      size="sm"
-                      bg="white"
-                      onClick={() => onDeleteItem(item.text)}
-                    >
-                      <Icon as={DeleteIcon} color="gray" />
-                    </Button>
-                  </Box>
-                );
+                return <ItemTask item={item} onDeleteItem={onDeleteItem} />;
               })}
           </Box>
           <Button

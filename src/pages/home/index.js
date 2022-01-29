@@ -5,6 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Hero from "./Hero";
 import Projects from "./Projects";
+import Quote from "./Quote";
 import ToDo from "./TodoList";
 
 export default function index() {
@@ -12,9 +13,11 @@ export default function index() {
     <Box>
       <Hero />
       <About />
+      <Quote />
       <ToDo />
       <Projects />
       <Contact />
+      <br /> <br /> <br /> <br />
       <Footer />
     </Box>
   );
