@@ -27,7 +27,7 @@ export default function Footer() {
           </Button>
         </a>
         <a
-          href="https://instagram.com/kevincodigo"
+          href="https://www.instagram.com/kev.riveros/"
           target="_blank"
           rel="noreferrer"
         >
@@ -40,19 +40,10 @@ export default function Footer() {
           </Button>
         </a>
         <a
-          href="https://www.youtube.com/channel/UCECuuQE4Vx2kLl8SC8K-r5A?sub_confirmation=1"
+          href="https://github.com/kevin-riveros"
           target="_blank"
           rel="noreferrer"
         >
-          <Button
-            bg="transparent"
-            color="white"
-            _hover={{ color: "gray.800", backgroundColor: "white" }}
-          >
-            <Icon as={AiFillYoutube} w="30px" h="30px" />
-          </Button>
-        </a>
-        <a href="https://github.com/kevinrsd" target="_blank" rel="noreferrer">
           <Button
             bg="transparent"
             color="white"
@@ -69,8 +60,8 @@ export default function Footer() {
         fontSize="12px"
       >
         Build with ❤️ by{" "}
-        <a href="https://kevincodigo.com/" target="_blank" rel="noreferrer">
-          kevincodigo
+        <a href="https://www.kevincode.com/" target="_blank" rel="noreferrer">
+          kevincode
         </a>
       </Text>
     </Box>

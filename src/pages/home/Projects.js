@@ -3,10 +3,6 @@ import React from "react";
 
 const cardsProjects = [
   {
-    url: "https://kevincodigo.com/",
-    image: "/assets/card1.png",
-  },
-  {
     url: "https://www.riffazo.com/",
     image: "/assets/card2.png",
   },
@@ -21,6 +17,10 @@ const cardsProjects = [
   {
     url: "",
     image: "/assets/card5.png",
+  },
+  {
+    url: "https://kevincodigo.com/",
+    image: "/assets/card1.png",
   },
   {
     url: "",
@@ -60,7 +60,8 @@ export default function Projects() {
                     backgroundColor="gray.100"
                     bgImage={`url(${card.image})`}
                     bgPosition="center"
-                    bgSize="cover"
+                    bgSize="contain"
+                    bgRepeat="no-repeat"
                     borderRadius="10px"
                     cursor={card.url ? "pointer" : "default"}
                   />

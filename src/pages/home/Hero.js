@@ -83,7 +83,7 @@ export default function Hero() {
               exceptional, high-quality websites and applications.
             </Text>
             <Avatar
-              src="/assets/profile.png"
+              src="/assets/profile_image.jpeg"
               alt=""
               name="K R"
               bg="#c4c4c4"
@@ -108,7 +108,7 @@ export default function Hero() {
                 </Button>
               </a>
               <a
-                href="https://instagram.com/kevincodigo"
+                href="https://www.instagram.com/kev.riveros/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -122,16 +122,7 @@ export default function Hero() {
                 </Button>
               </a>
               <a
-                href="https://www.youtube.com/channel/UCECuuQE4Vx2kLl8SC8K-r5A?sub_confirmation=1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button>
-                  <Icon as={AiFillYoutube} w="30px" h="30px" color="gray.500" />
-                </Button>
-              </a>
-              <a
-                href="https://github.com/kevinrsd"
+                href="https://github.com/kevin-riveros"
                 target="_blank"
                 rel="noreferrer"
               >
